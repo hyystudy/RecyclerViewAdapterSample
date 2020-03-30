@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomCardShape" parent="ShapeAppearance.MaterialComponents">
+        <item name="cornerFamily">cut</item>
+
+<!--        <item name="cornerFamilyBottomRight">cut</item>-->
+<!--        <item name="cornerFamilyTopLeft">rounded</item>-->
+        <item name="cornerSizeTopLeft">@dimen/card_corners_radius</item>
+        <item name="cornerSizeBottomRight">@dimen/card_corners_radius</item>
+        <item name="cornerSizeTopRight">@dimen/card_corners_radius</item>
+        <item name="cornerSizeBottomLeft">@dimen/card_corners_radius</item>
+    </style>
+</resources>

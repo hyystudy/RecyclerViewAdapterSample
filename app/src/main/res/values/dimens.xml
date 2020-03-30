@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="divider_default_height">12dp</dimen>
+    <dimen name="divider_default_width">8dp</dimen>
+    <dimen name="normal_margin">16dp</dimen>
+    <dimen name="card_corners_radius">28dp</dimen>
+</resources>
