@@ -11,6 +11,7 @@ class SingleTypeAdapter :
     override fun convert(holder: BaseDataBindingHolder<ItemSingleTypeBinding>, item: String) {
         holder.dataBinding?.apply {
             data = item
+            position = holder.layoutPosition
             executePendingBindings()
         }
     }

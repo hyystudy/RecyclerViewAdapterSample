@@ -73,4 +73,8 @@ dependencies {
     //viewpager2
     implementation "androidx.viewpager2:viewpager2:$viewpager_version"
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
+
+    //rxjava2
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
 }

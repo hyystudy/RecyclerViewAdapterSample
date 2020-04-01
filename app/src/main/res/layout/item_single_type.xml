@@ -6,13 +6,16 @@
         <variable
             name="data"
             type="String" />
+        <variable
+            name="position"
+            type="Integer" />
     </data>
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:cardElevation="2dp"
         app:shapeAppearance="@style/CustomCardShape"
-        app:rippleColor="@color/colorPrimary_50">
+        app:rippleColor="@color/colorPrimary_20">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,7 +29,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="@{data}" />
+                tools:text="@{data + position}" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

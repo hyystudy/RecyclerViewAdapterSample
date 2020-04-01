@@ -7,16 +7,24 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.basequickadapterdemo.FirstFragment"
+        android:name="com.example.basequickadapterdemo.MainFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_FirstFragment_to_baseQuickAdapterFragment"
             app:destination="@id/baseQuickAdapterFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_multiTypeAdapterFragment"
+            app:destination="@id/multiTypeAdapterFragment" />
     </fragment>
     <fragment
         android:id="@+id/baseQuickAdapterFragment"
         android:name="com.example.basequickadapterdemo.BaseQuickAdapterFragment"
         android:label="fragment_base_quick_adapter"
         tools:layout="@layout/fragment_base_quick_adapter" />
+    <fragment
+        android:id="@+id/multiTypeAdapterFragment"
+        android:name="com.example.basequickadapterdemo.MultiTypeAdapterFragment"
+        android:label="fragment_multi_type_adapter"
+        tools:layout="@layout/fragment_multi_type_adapter" />
 </navigation>
