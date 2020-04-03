@@ -76,11 +76,11 @@ class MainFragment : Fragment() {
 
     private fun ensureListeners() {
         mBinding.btnToBaseQuickAdapter.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_baseQuickAdapterFragment)
+            findNavController().navigate(MainFragmentDirections.actionFirstFragmentToBaseQuickAdapterFragment())
         }
 
         mBinding.btnToMultiTypeAdapter.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_multiTypeAdapterFragment)
+            findNavController().navigate(MainFragmentDirections.actionFirstFragmentToMultiTypeAdapterFragment())
         }
 
         mBinding.btnAsyncSubject.setOnClickListener {

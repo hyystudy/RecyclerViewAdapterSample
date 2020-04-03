@@ -60,7 +60,6 @@ class BaseQuickAdapterFragment : Fragment() {
         mSingleTypeAdapter.setOnItemClickListener { adapter, view, position ->
             Toast.makeText(requireContext(), mSingleTypeAdapter.data[position], Toast.LENGTH_SHORT).show()
         }
-
         //toolbar
         mBinding.toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
