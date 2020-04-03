@@ -2,8 +2,7 @@
     <string name="app_name">BaseQuickAdapterDemo</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Main Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
@@ -11,8 +10,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="base_quick_adapter">BaseQuickAdapter</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="str_up">Up</string>
     <string name="str_down">Down</string>
     <string name="async_subject">AsyncSubject</string>
@@ -20,4 +17,5 @@
     <string name="public_subject">PublicSubject</string>
     <string name="str_add">Add</string>
     <string name="str_remove">Remove</string>
+    <string name="multi_type_adapter">MultiTypeAdapter</string>
 </resources>

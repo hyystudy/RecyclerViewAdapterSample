@@ -15,7 +15,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:navigationIcon="@drawable/icon_arrow_back_white"
+            android:theme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="@drawable/ic_arrow_back_white"
             app:title="@string/base_quick_adapter"
             app:menu="@menu/menu_base_quick_adapter"
             app:titleTextColor="@android:color/white" />
@@ -27,6 +28,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
-        android:scrollbarThumbVertical="@drawable/bg_scroll_bars"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

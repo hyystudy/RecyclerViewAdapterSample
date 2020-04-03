@@ -36,6 +36,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_to_multi_type_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multi_type_adapter"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_to_base_quick_adapter" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_async_subject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +54,7 @@
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_to_base_quick_adapter" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_to_multi_type_adapter" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_behavior_subject"

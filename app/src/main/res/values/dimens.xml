@@ -4,4 +4,5 @@
     <dimen name="divider_default_width">8dp</dimen>
     <dimen name="normal_margin">16dp</dimen>
     <dimen name="card_corners_radius">28dp</dimen>
+    <dimen name="card_corners_radius_small">6dp</dimen>
 </resources>

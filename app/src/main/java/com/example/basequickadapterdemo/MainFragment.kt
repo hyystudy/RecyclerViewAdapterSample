@@ -55,12 +55,6 @@ class MainFragment : Fragment() {
             .doOnNext {
                 Log.d(TAG, "asyncSubject onNext ---> $it")
             }
-            .doOnComplete {
-                Log.d(TAG, "asyncSubject onComplete")
-            }
-            .doOnError {
-                Log.d(TAG, "asyncSubject onError --> ${it.message}")
-            }
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe()
 
@@ -68,24 +62,12 @@ class MainFragment : Fragment() {
             .doOnNext {
                 Log.d(TAG, "behaviorSubject onNext ---> $it")
             }
-            .doOnComplete {
-                Log.d(TAG, "behaviorSubject onComplete")
-            }
-            .doOnError {
-                Log.d(TAG, "behaviorSubject onError --> ${it.message}")
-            }
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe()
 
         mainViewModel.publishObservable()
             .doOnNext {
                 Log.d(TAG, "publishSubject onNext ---> $it")
-            }
-            .doOnComplete {
-                Log.d(TAG, "publishSubject onComplete")
-            }
-            .doOnError {
-                Log.d(TAG, "publishSubject onError --> ${it.message}")
             }
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe()
@@ -95,6 +77,10 @@ class MainFragment : Fragment() {
     private fun ensureListeners() {
         mBinding.btnToBaseQuickAdapter.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_baseQuickAdapterFragment)
+        }
+
+        mBinding.btnToMultiTypeAdapter.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_multiTypeAdapterFragment)
         }
 
         mBinding.btnAsyncSubject.setOnClickListener {

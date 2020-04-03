@@ -29,12 +29,9 @@ class BaseQuickViewModel : ViewModel() {
     fun removeData(position: Int) {
         datas.apply {
             value?.removeAt(position)
-            updateDatas()
+            postValue(value)
         }
     }
 
-    private fun updateDatas(){
-        datas.value = datas.value
-    }
 
 }
